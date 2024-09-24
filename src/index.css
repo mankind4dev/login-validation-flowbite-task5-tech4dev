@@ -1,0 +1,99 @@
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+  text-align: start;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem 0.5rem;
+  background-color: #030303;
+}
+
+.App section {
+  width: 100%;
+  max-width: 520px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  border: 2px solid rgba(89, 89, 89, 0.4);
+  border-radius: 10px;
+}
+
+.App h1{
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+.App p{
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.App section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+.App section form label{
+    color: #fff;
+    font-size: 18px;
+} 
+
+.App section form button,
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  padding: 0.55rem;
+  border-radius: 0.5rem;
+}
+
+.App .acct {
+    display: flex;
+    white-space: nowrap;
+}
+
+.App .acct  span{
+    color: #fff;
+}
+
+.App .acct .links{
+    color: green;
+    margin-left: 10px;
+    text-decoration: none !important;
+    text-transform: capitalize;   
+}
+
+.link{
+    text-decoration: underline !important;
+}
+
+.formInput .emailError, .pwdError{
+    color: red;
+}
+.formInput > .pwdError{
+    color: red;
+}
